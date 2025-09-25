@@ -1,0 +1,242 @@
+.aluno-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.aluno-container header {
+    display: flex;
+    align-items: center;
+    padding: 30px 0 40px 0;
+    border-bottom: 2px solid #f0f0f5;
+    margin-bottom: 20px;
+}
+
+.aluno-container header span {
+    font-size: 18px;
+    margin-left: 24px;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.aluno-container header img {
+    height: 64px;
+    border-radius: 8px;
+}
+
+.aluno-container header a {
+    width: 260px;
+    margin-left: auto;
+    margin-top: 0;
+    border-radius: 8px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #00d4ff, #6366f1);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+
+.aluno-container header a:hover {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+    text-decoration: none;
+}
+
+.aluno-container header button {
+    height: 50px;
+    width: auto;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    background: linear-gradient(135deg, #ffffff, #f8fafc);
+    margin-left: 16px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #64748b;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aluno-container header button:hover {
+    background: linear-gradient(135deg, #ff6b9d, #8b5cf6);
+    border-color: #ff6b9d;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 157, 0.4);
+}
+
+.aluno-container form {
+    margin: 20px 0 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.aluno-container form input {
+    width: 350px;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
+}
+
+.aluno-container form input:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.aluno-container form button {
+    border-radius: 8px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #8b5cf6, #ff6b9d);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    min-height: 60px;
+}
+
+.aluno-container form button:hover {
+    background: linear-gradient(135deg, #6366f1, #00d4ff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+.aluno-container h1 {
+    margin-top: 30px;
+    margin-bottom: 32px;
+    color: #0f172a;
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.aluno-container ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 20px;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.aluno-container ul li {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.aluno-container ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #00d4ff, #6366f1, #8b5cf6, #ff6b9d);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.aluno-container ul li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2);
+}
+
+.aluno-container ul li:hover::before {
+    opacity: 1;
+}
+
+.aluno-container ul li .aluno-info {
+    flex: 1;
+    margin-right: 20px;
+    line-height: 1.6;
+}
+
+.aluno-container ul li .actions {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.aluno-container ul li button {
+    border: 0;
+    background: #f8f9fa;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.aluno-container ul li button:first-child:hover {
+    background: linear-gradient(135deg, #00d4ff, #8b5cf6);
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+}
+
+.aluno-container ul li button:last-child:hover {
+    background: linear-gradient(135deg, #ff6b9d, #c084fc);
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+}
+
+.aluno-container ul li strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d;
+}
+
+.aluno-container ul li p + strong {
+    margin-top: 32px;
+}
+
+.aluno-container ul li p {
+    color: #737380;
+    line-height: 21px;
+    font-size: 16px;
+}
+
+.aluno-container ul li b {
+    font-weight: 600;
+    color: #475569;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.aluno-container ul li .aluno-info p {
+    margin: 10px 0;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.aluno-container ul li .aluno-info p:first-child {
+    margin-top: 0;
+}
+
+.aluno-container ul li .aluno-info p:last-child {
+    margin-bottom: 0;
+}

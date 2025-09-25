@@ -1,0 +1,140 @@
+.novo-aluno-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.novo-aluno-container .content {
+    width: 100%;
+    padding: 60px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.15);
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.novo-aluno-container .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00d4ff, #6366f1, #8b5cf6, #ff6b9d);
+}
+
+.novo-aluno-container .content section {
+    width: 100%;
+    max-width: 380px;
+}
+
+.novo-aluno-container .content section h1 {
+    margin: 32px 0 24px;
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.novo-aluno-container .content section p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.novo-aluno-container .content form {
+    width: 100%;
+    max-width: 450px;
+}
+
+.novo-aluno-container .content form input {
+    margin-top: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.novo-aluno-container .content form input:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.novo-aluno-container .content form .button {
+    background: linear-gradient(135deg, #00d4ff, #6366f1);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+    color: white;
+}
+
+.novo-aluno-container .content form .button:hover {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    color: #64748b;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #e2e8f0;
+}
+
+.back-link svg {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover {
+    color: #6366f1;
+    background: rgba(99, 102, 241, 0.1);
+    border-color: #6366f1;
+    text-decoration: none;
+    transform: translateX(-4px);
+}
+
+.back-link:hover svg {
+    transform: translateX(-2px);
+}
+
+.novo-aluno-container .content section.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.novo-aluno-container .content section.form svg {
+    margin-bottom: 24px;
+    padding: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+    border: 2px solid rgba(99, 102, 241, 0.2);
+}

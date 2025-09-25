@@ -1,70 +1,223 @@
-# Getting Started with Create React App
+# 🎓 Sistema de Gerenciamento de Alunos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um sistema moderno e elegante para gerenciamento de alunos, desenvolvido com React e design futurista. O projeto oferece funcionalidades completas de CRUD (Create, Read, Update, Delete) com uma interface visual impressionante.
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-1.12.2-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
 
-In the project directory, you can run:
+## ✨ Características Principais
 
-### `npm start`
+### 🎨 Design Futurista
+- **Interface Glass Morphism**: Elementos translúcidos com efeito de vidro
+- **Gradientes Animados**: Cores vibrantes com transições suaves
+- **Animações CSS**: Efeitos de hover, pulso e movimento
+- **Tipografia Orbitron**: Fonte futurística para elementos importantes
+- **Tema Cyberpunk**: Paleta de cores azul neon, roxo e rosa vibrante
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔐 Sistema de Autenticação
+- Login seguro com JWT Token
+- Validação de sessão
+- Proteção de rotas privadas
+- Logout com limpeza de cache
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 👥 Gerenciamento de Alunos
+- **Listagem**: Visualização de todos os alunos em cards elegantes
+- **Busca**: Sistema de pesquisa em tempo real
+- **Cadastro**: Formulário para novos alunos
+- **Edição**: Atualização de dados existentes
+- **Exclusão**: Remoção com confirmação
 
-### `npm test`
+## 🚀 Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- **React 19.1.1**: Framework JavaScript moderno
+- **React Router DOM 7.9.1**: Navegação entre páginas
+- **React Icons 5.5.0**: Ícones elegantes
+- **Axios 1.12.2**: Cliente HTTP para API
 
-### `npm run build`
+### Styling
+- **CSS3 Moderno**: Grid, Flexbox, Animations
+- **Google Fonts**: Orbitron para tipografia futurista
+- **Gradientes CSS**: Efeitos visuais avançados
+- **Backdrop Filter**: Efeitos de blur e transparência
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend Integration
+- **API REST**: Comunicação com backend .NET
+- **JWT Authentication**: Autenticação baseada em tokens
+- **HTTPS**: Conexão segura (localhost:7245)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Instalação e Configuração
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pré-requisitos
+- Node.js (versão 16 ou superior)
+- npm ou yarn
+- Backend API rodando na porta 7245
 
-### `npm run eject`
+### Passo a Passo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone o repositório**
+```bash
+git clone [url-do-repositorio]
+cd clientereact
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Instale as dependências**
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Configure a API**
+   - Certifique-se de que o backend está rodando em `https://localhost:7245/`
+   - Verifique os endpoints em `src/services/api.js`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Execute o projeto**
+```bash
+npm start
+```
 
-## Learn More
+5. **Acesse no navegador**
+   - URL: `http://localhost:3000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Estrutura do Projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+clientereact/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── Login/
+│   │   │   ├── index.js          # Componente de Login
+│   │   │   └── styles.css        # Estilos futuristas do login
+│   │   ├── Alunos/
+│   │   │   ├── index.js          # Listagem de alunos
+│   │   │   └── styles.css        # Estilos da listagem
+│   │   └── NovoAluno/
+│   │       ├── index.js          # Cadastro/Edição de alunos
+│   │       └── styles.css        # Estilos do formulário
+│   ├── services/
+│   │   └── api.js                # Configuração do Axios
+│   ├── assets/
+│   │   └── login.png             # Imagens do projeto
+│   ├── App.js                    # Componente principal
+│   ├── Global.css                # Estilos globais
+│   └── index.js                  # Ponto de entrada
+├── package.json
+└── README.md
+```
 
-### Code Splitting
+## 🎯 Funcionalidades Detalhadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🔑 Tela de Login
+- Design glass morphism com fundo aurora
+- Campos de email e senha com animações
+- Botão com gradiente e efeitos hover
+- Validação e feedback de erro
+- Redirecionamento automático após login
+
+### 📊 Dashboard de Alunos
+- Cards responsivos com informações dos alunos
+- Sistema de busca em tempo real
+- Botões de ação (editar/excluir) com ícones
+- Header com informações do usuário logado
+- Botão de logout com confirmação
+
+### ➕ Cadastro/Edição
+- Formulário dinâmico (cadastro ou edição)
+- Campos: Nome, Idade, Email
+- Validação de dados
+- Feedback visual de sucesso/erro
+- Navegação intuitiva
+
+## 🎨 Paleta de Cores
+
+```css
+/* Cores Principais */
+Azul Neon: #00d4ff
+Roxo Primário: #6366f1
+Roxo Secundário: #8b5cf6
+Rosa Vibrante: #ff6b9d
+Pink Accent: #ec4899
+
+/* Backgrounds */
+Azul Escuro: #0f0f23
+Azul Médio: #1a1a2e
+Azul Profundo: #16213e
+Azul Royal: #0f3460
+Roxo Profundo: #533483
+```
+
+## 🔧 Scripts Disponíveis
+
+```bash
+# Inicia o servidor de desenvolvimento
+npm start
+
+# Cria build para produção
+npm run build
+
+# Executa os testes
+npm test
+
+# Ejeta as configurações (irreversível)
+npm run eject
+```
+
+## 📱 Responsividade
+
+O projeto foi desenvolvido com design responsivo:
+- **Desktop**: Layout completo com todas as funcionalidades
+- **Tablet**: Interface adaptada para telas médias
+- **Mobile**: Layout otimizado para dispositivos móveis
+
+## 🔒 Segurança
+
+- Autenticação JWT
+- Tokens armazenados localmente
+- Validação de sessão em cada requisição
+- Proteção contra acesso não autorizado
+- HTTPS para comunicação com API
+
+## 🚀 Próximas Funcionalidades
+
+- [ ] Paginação na listagem de alunos
+- [ ] Filtros avançados de busca
+- [ ] Upload de foto do aluno
+- [ ] Relatórios em PDF
+- [ ] Tema dark/light mode
+- [ ] Notificações push
+- [ ] Cache offline
+
+## 🤝 Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👨‍💻 Autor
+
+**Seu Nome**
+- GitHub: [@seu-usuario](https://github.com/seu-usuario)
+- LinkedIn: [Seu LinkedIn](https://linkedin.com/in/seu-perfil)
+- Email: seu.email@exemplo.com
+
+---
+
+⭐ **Se este projeto te ajudou, deixe uma estrela!** ⭐
+
+*Desenvolvido com ❤️ e muito ☕*
 
 ### Analyzing the Bundle Size
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
